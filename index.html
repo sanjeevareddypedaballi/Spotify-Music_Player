@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" alt="left-banner-img">
+            <div class="heading">
+                <h1></h1>
+            <p></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-section">
+
+        <div class="controls" onclick="playaudio()" id="play-pause"><img  class="play-button"src="images/play-button.svg" alt="play-image"></div>
+
+        <audio id="song"></audio>
+
+        <table>
+            <thead>
+                <th class="song-number">#</th>
+                <th class="song-title">Title</th>
+                <th class="song-artist">Artist</th>
+                <th class="song-duration">Duration</th>
+            </thead>
+            <tr id="song1" onclick="playAll(1)">
+                <td>1</td>
+                <td>Every night in my dreams</td>
+                <td>Celine dion</td>
+                <td>04:43</td>
+              </tr>
+              <tr id="song2" onclick="playAll(2)">
+                <td>2</td>
+                <td>Kannulatho Chooseve</td>
+                <td>Ar Rahman</td>
+                <td>05:11</td>
+              </tr>
+              <tr id="song3" onclick="playAll(3)">
+                <td>3</td>
+                <td>Yedhane Koyyake</td>
+                <td>Krish,Bhargavi</td>
+                <td>05:17</td>
+              </tr>
+              <tr id="song4" onclick="playAll(4)">
+                <td>4</td>
+                <td>Naalona Pongenu</td>
+                <td>Harish Raghavendra,Devan</td>
+                <td>06:14</td>
+              </tr>
+              <tr id="song5" onclick="playAll(5)">
+                <td>5</td>
+                <td>Yegasi Yegasi</td>
+                <td>Benny Dayal,Naresh Iyer</td>
+                <td>04:53</td>
+              </tr>
+              <tr id="song6" onclick="playAll(6)">
+                <td>6</td>
+                <td>Monna Kanipinchavu</td>
+                <td>Naresh Iyer,Prashanthini</td>
+                <td>05:34</td>
+              </tr>
+              <tr id="song7" onclick="playAll(7)">
+                <td>7</td>
+                <td>O Shanthi Shanthi</td>
+                <td>Krish,S.P.B.Charan</td>
+                <td>03:04</td>
+              </tr>
+              <tr id="song8" onclick="playAll(8)">
+                <td>8</td>
+                <td>Adhey Nannu</td>
+                <td>Karthik,V.Prasanna</td>
+                <td>05:23</td>
+              </tr>
+              <tr id="song9" onclick="playAll(9)">
+                <td>9</td>
+                <td>Nidhare Kala</td>
+                <td>Sudha Raghunathan</td>
+                <td>05:21</td>
+              </tr>
+              <tr id="song10" onclick="playAll(10)">
+                <td>10</td>
+                <td>Hukum</td>
+                <td>Anirudh Ravichander</td>
+                <td>03:04</td>
+              </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
